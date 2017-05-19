@@ -1,0 +1,14 @@
+uuid: e469ad4f-7285-478f-8f76-556d9d090683
+name: ataylor-texascamp-2017-training
+mail: andrew@pantheon.me
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo
