@@ -1,0 +1,18 @@
+uuid: 3cb39945-63b9-42d3-a406-d97fa4b59d09
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Store Locations'
+type: store_locations
+description: 'Locations of different store franchises'
+help: 'Store name should be the store number and it''s location. For example, "#204 - Dallas, TX"'
+new_revision: true
+preview_mode: 1
+display_submitted: true
