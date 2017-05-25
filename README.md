@@ -6,11 +6,12 @@
 
 ---
 
-## Welcome!
-This training has multiple hands-on steps. Every step has a branch in this GitHub repository with detailed instructions as well as the codebase at the end of that step.
-
-Click through to each branch, follow the steps, then come back here to tackle the next item on the list.
-
-1. [Install address module with Composer](https://github.com/texascamp-2017-training/ataylor-texascamp-2017-training/tree/address-module)
-2. [Apply a Drupal patch with Composer](https://github.com/texascamp-2017-training/ataylor-texascamp-2017-training/tree/composer-patches)
-3. [Configuration management](https://github.com/texascamp-2017-training/ataylor-texascamp-2017-training/tree/config-management)
+## Configuring Address Module
+1) Visit the address module multidev on Pantheon
+2) Login to the Drupal admin
+3) Create a new store locations content type
+4) Add the address field and other fields, as desired, to the content type
+5) Create some dummy content with the new content type
+6) Export and commit config
+7) Check out pushback to GitHub
+8) Create pull request on GitHub
