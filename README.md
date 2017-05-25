@@ -6,12 +6,22 @@
 
 ---
 
-## Installing Address Module
-1) Download address module with Composer
-	- Create a new git branch `address-module`
-	- `composer require "drupal/address ~1.0"`
-	- Add and commit `composer.json` and `composer.lock` with git
-2) Check CircleCI build for success and deployment to Pantheon
-3) Visit the Pantheon multidev
-4) Login to the Drupal dashboard
-5) Enable address module
+## Install a Drupal patch with Composer
+
+1. Check out [this address module issue on Drupal.org](https://www.drupal.org/node/2881391)
+2. Create a new git branch, `composer-patches`
+3. Run `composer require "cweagans/composer-patches ~1.0"` to install `composer-patches`
+4. Add a `patches` section to `composer.json` nested under the `extra` section.
+```
+"enable-patching": true,
+"composer-exit-on-patch-failure": true,
+"patches": {
+    "drupal/address": {
+        "The locality.name data is missed in PlainFormater": "https://www.drupal.org/files/issues/locality-name-data-missed-plainformater-2881391-1.patch"
+    }
+},
+```
+5. Run `composer update`
+6. Add, commit and push the `composer.json` and `composer.lock`
+7. Open a pull request for the new branch on GitHub
+8. Check the CircleCI logs to see if the patch applied correctly
