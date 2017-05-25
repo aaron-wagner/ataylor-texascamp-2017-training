@@ -9,9 +9,8 @@
 ## Install a Drupal patch with Composer
 
 1. Check out [this address module issue on Drupal.org](https://www.drupal.org/node/2881391)
-2. Create a new git branch, `composer-patches`
-3. Run `composer require "cweagans/composer-patches ~1.0"` to install `composer-patches`
-4. Add a `patches` section to `composer.json` nested under the `extra` section.
+2. Run `composer require "cweagans/composer-patches ~1.0"` to install `composer-patches`
+3. Add a `patches` section to `composer.json` nested under the `extra` section.
 ```
 "enable-patching": true,
 "composer-exit-on-patch-failure": true,
@@ -21,7 +20,9 @@
     }
 },
 ```
-5. Run `composer update`
-6. Add, commit and push the `composer.json` and `composer.lock`
-7. Open a pull request for the new branch on GitHub
+4. Run `composer update`
+5. Add, commit and push the `composer.json` and `composer.lock`
+7. Push the changes to GitHub
 8. Check the CircleCI logs to see if the patch applied correctly
+
+Move on to [Configuration management](https://github.com/texascamp-2017-training/ataylor-texascamp-2017-training/tree/config-management)
