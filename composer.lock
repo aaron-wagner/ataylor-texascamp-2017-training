@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b8fe4e9b8a62d5cba7ce236d5f31c41a",
+    "content-hash": "7bee67a1ca7cbb124068de6030b9650c",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1226,7 +1226,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/address-8.x-1.0.zip",
-                "reference": "8.x-1.0",
+                "reference": null,
                 "shasum": "2be22f841f8e4af2ba23b6bc9983e013c167c520"
             },
             "require": {
@@ -1242,6 +1242,9 @@
                 "drupal": {
                     "version": "8.x-1.0",
                     "datestamp": "1495109886"
+                },
+                "patches_applied": {
+                    "The locality.name data is missed in PlainFormater": "https://www.drupal.org/files/issues/locality-name-data-missed-plainformater-2881391-1.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
