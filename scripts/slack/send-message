@@ -4,7 +4,7 @@
 set -e
 
 # Get the latest Git commit message
-COMMIT_MESSAGE="$(git show --name-only --decorate)"
+COMMIT_MESSAGE="$(git log -1 --pretty=%B)"
 
 # Get the latest Git commit user
 COMMIT_USER="$(git log --format='%an' -1)"
