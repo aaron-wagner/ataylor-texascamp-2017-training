@@ -4,7 +4,7 @@
 set -e
 
 # Get the site UUID from the site name
-TERMINUS_SITE_UUID=$(terminus site:info --field=id)
+TERMINUS_SITE_UUID=$(terminus site:info ${TERMINUS_SITE} --field=id)
 
 # Define the Slack username
 SLACK_USERNAME="CircleCI Bot"
