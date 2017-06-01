@@ -7,10 +7,9 @@
 ---
 
 ## Welcome!
-This training has multiple hands-on steps. Every step has a branch in this GitHub repository with detailed instructions as well as the codebase at the end of that step.
+This training has multiple hands-on steps. Every branch in this repository, besides `master`, corresponds to the **ending** state of one of the hacking sessions. If you get stuck on a hacking session check out the links below to the corresponding branch to see what the result should look like.
 
-Click through to each branch, follow the steps, then come back here to tackle the next item on the list.
-
-1. [Install address module with Composer](https://github.com/texascamp-2017-training/ataylor-texascamp-2017-training/tree/address-module)
-2. [Apply a Drupal patch with Composer](https://github.com/texascamp-2017-training/ataylor-texascamp-2017-training/tree/composer-patches)
-3. [Configuration management](https://github.com/texascamp-2017-training/ataylor-texascamp-2017-training/tree/config-management)
+1. [Install the address module with Composer](https://github.com/texascamp-2017-training/ataylor-texascamp-2017-training/tree/install-address-module)
+2. [Patch the address module with Composer](https://github.com/texascamp-2017-training/ataylor-texascamp-2017-training/tree/patch-address-module)
+3. [Create a _store locations_ content type](https://github.com/texascamp-2017-training/ataylor-texascamp-2017-training/tree/store-locations-content-type)
+4. [Add Slack integration](https://github.com/texascamp-2017-training/ataylor-texascamp-2017-training/tree/slack-integration)
