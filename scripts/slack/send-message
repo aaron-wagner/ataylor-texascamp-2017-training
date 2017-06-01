@@ -3,6 +3,12 @@
 # Exit immediately on errors
 set -e
 
+# Grab the latest Git commit message
+COMMIT_MESSAGE="$(git show --name-only --decorate)"
+
+# grab the latest Git commit user
+COMMIT_USER="$(git log --format='%an <%ae>' -1)"
+
 # Get the site UUID from the site name
 TERMINUS_SITE_UUID=$(terminus site:info ${TERMINUS_SITE} --field=id)
 
@@ -21,7 +27,7 @@ else
 fi
 
 # Define the Slack message
-SLACK_MESSAGE="Circle CI build ${CIRCLE_BUILD_NUM} by ${CIRCLE_PROJECT_USERNAME} was successful and has been deployed \
+SLACK_MESSAGE="The commit '${COMMIT_MESSAGE}' by ${COMMIT_AUTHOR} on branch ${CIRCLE_BRANCH} has been deployed \
 to Pantheon on <https://dashboard.pantheon.io/sites/${TERMINUS_SITE_UUID}#${SLACK_ENV}/code|the ${SLACK_ENV} environment>!"
 
 # Send the message to Slack
