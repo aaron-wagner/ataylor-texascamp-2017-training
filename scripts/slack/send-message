@@ -24,7 +24,7 @@ else
 fi
 
 # Define the Slack message
-SLACK_MESSAGE="The commit `${COMMIT_MESSAGE}` by `${CIRCLE_USERNAME}` on branch `${CIRCLE_BRANCH}` has been deployed \
+SLACK_MESSAGE="The commit \`${COMMIT_MESSAGE}\` by \`${CIRCLE_USERNAME}\` on branch \`${CIRCLE_BRANCH}\` has been deployed \
 to Pantheon on <https://dashboard.pantheon.io/sites/${TERMINUS_SITE_UUID}#${SLACK_ENV}/code|the ${SLACK_ENV} environment>!"
 
 # Send the message to Slack
